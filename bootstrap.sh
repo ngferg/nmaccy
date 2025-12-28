@@ -1,5 +1,6 @@
 defaults write -g InitialKeyRepeat -float 25.0
 defaults write -g KeyRepeat -float 1.0
+defaults delete -g ApplePressAndHoldEnabled
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -25,8 +26,13 @@ brew install --cask visual-studio-code
 
 brew install python
 brew install node
+brew install bruno
 
 git config --global --edit
+mkdir ~/Code
+mkdir ~/Code/rust
+mkdir ~/Code/python
+mkdir ~/Code/web
 
 reboot
 
