@@ -26,5 +26,7 @@ brew install --cask visual-studio-code
 brew install python
 brew install node
 
+git config --global --edit
+
 reboot
 
